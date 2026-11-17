@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" data-dev="true">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quick Copy</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <form id="add-form" class="add-form">
+        <input id="new-name" type="text" placeholder="Name (optional)" autocomplete="off">
+        <input id="new-value" type="text" placeholder="Add new value..." required autocomplete="off">
+        <button type="submit" class="copy-btn">Add</button>
+    </form>
+
+    <table class="copy-table">
+        <thead>
+            <tr>
+                <th>Value</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="list"></tbody>
+    </table>
+
+    <div class="io-actions">
+        <button id="export-btn" class="copy-btn" type="button">Export</button>
+        <button id="import-btn" class="copy-btn" type="button">Import</button>
+        <input id="import-file" type="file" accept="application/json" hidden>
+    </div>
+</body>
+
+</html>
